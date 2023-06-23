@@ -9,9 +9,9 @@ const galleryAdd = galleryItems
                     <img class="gallery__image" src="${preview}" alt="${description}"/>
                 </a>
             </li>`
-)
-.join("")
-galleryEl.innerHTML = galleryAdd;
+    )
+    .join("");
+galleryEl.insertAdjacentHTML("afterbegin",galleryAdd);
 const lightbox = new SimpleLightbox('.gallery a', {
   captionData: 'alt',
   captionDelay: 250,
