@@ -15,7 +15,6 @@ const galleryAdd = galleryItems
   )
   .join('');
 galleryEl.innerHTML = galleryAdd;
-gallery__link');
 galleryEl.addEventListener('click', onGalleryClick);
 function onGalleryClick(event) {
   event.preventDefault();
